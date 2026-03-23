@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kotla Chandrasekhar - Cybersecurity & Software Engineer Portfolio">
+    <title>Kotla Chandrasekhar | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <div id="loading-text">INITIALIZING 3D EXPERIENCE...</div>
+    </div>
+
+    <canvas id="webgl-canvas"></canvas>
+
+    <main class="container" id="ui-container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-logo">KC</div>
+            <nav class="header-nav">
+                <a href="#works">WORKS</a>
+                <a href="#certificates">CERTIFICATES</a>
+                <a href="#training">TRAINING</a>
+                <a href="#achievements">ACHIEVEMENTS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <h4 class="availability">± CURRENTLY AVAILABLE FOR WORK</h4>
+            <h1 class="huge-text">KOTLA<br>CHANDRASEKHAR</h1>
+            <h3 class="role">CYBERSECURITY & SOFTWARE ENGINEER</h3>
+        </section>
+
+        <!-- WORKS -->
+        <section class="works" id="works">
+            <h2 class="section-title">WORKS</h2>
+            <div class="works-list">
+                <a href="https://github.com/Kotlachandra/Financing-platform-for-startup" target="_blank" class="work-item">
+                    <span class="work-name">Financing Platform for Startups</span>
+                    <span class="work-tech">PHP • MySQL • Tailwind</span>
+                </a>
+                <a href="https://github.com/Kotlachandra/AI-Literature-Tutor" target="_blank" class="work-item">
+                    <span class="work-name">AI Literature Tutor</span>
+                    <span class="work-tech">AI Integration • Chatbot</span>
+                </a>
+                <a href="https://github.com/Kotlachandra/The-digital-time-capsule" target="_blank" class="work-item">
+                    <span class="work-name">The Digital Time Capsule</span>
+                    <span class="work-tech">Web App • Security</span>
+                </a>
+                <a href="https://github.com/Kotlachandra/mini-insta" target="_blank" class="work-item">
+                    <span class="work-name">Mini Insta</span>
+                    <span class="work-tech">Frontend • API • Auth</span>
+                </a>
+                <a href="https://github.com/Kotlachandra/Text-Based-Adventure-Game-" target="_blank" class="work-item">
+                    <span class="work-name">Text Based Adventure Game</span>
+                    <span class="work-tech">Python • CLI</span>
+                </a>
+                <a href="https://github.com/Kotlachandra/Book-Review-App" target="_blank" class="work-item">
+                    <span class="work-name">Book Review App & Emoji Generator</span>
+                    <span class="work-tech">Web App • API • DOM</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+        <section class="certificates" id="certificates">
+            <h2 class="section-title">CERTIFICATES</h2>
+            <div class="achievements-list">
+                <a href="https://drive.google.com/file/d/1eUN_c4ur34jpx498yD5nzEiv0YtB_Y2v/view?usp=sharing" target="_blank" class="achievement-text">NPTEL: CLOUD COMPUTING</a>
+                <a href="https://drive.google.com/file/d/1h8x0kYRvQlyd9gT23rGgvelF_j6lTVfG/view?usp=sharing" target="_blank" class="achievement-text">INFOSYS: GENERATIVE AI APPS WITH NO-CODE</a>
+                <a href="https://drive.google.com/file/d/1KKxGez7tkrgHzJK5cRlPDvtEmjFHt5Q5/view?usp=sharing" target="_blank" class="achievement-text">GOOGLE: BITS AND BYTES OF COMPUTER NETWORKING</a>
+            </div>
+        </section>
+
+        <!-- TRAINING -->
+        <section class="training" id="training">
+            <h2 class="section-title">TRAINING</h2>
+            <div class="achievements-list">
+                <a href="https://drive.google.com/file/d/1mII11vFJvQFLdq0__paSew4br3Q0pk39/view?usp=sharing" target="_blank" class="achievement-text">SUMMER TRAINING: DATA STRUCTURES & ALGORITHMS</a>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section class="achievements" id="achievements">
+            <h2 class="section-title">ACHIEVEMENTS</h2>
+            <div class="achievements-list">
+                <p class="achievement-text">3 STARS IN JAVA PROGRAMMING - HACKERRANK</p>
+                <p class="achievement-text">3 STARS IN PYTHON PROGRAMMING - HACKERRANK</p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <h2 class="section-title">ABOUT</h2>
+            <p class="about-text">
+                I'M A COMPUTER SCIENCE ENGINEERING STUDENT WITH A PASSION FOR BUILDING APPLICATIONS AND SECURING SYSTEMS. I BRING IDEAS TO LIFE WITH PYTHON, JAVA, AND MODERN WEB TECHNOLOGIES. ALWAYS LEARNING, EXPLORING CYBERSECURITY AND DEVOPS.
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact-links">
+                <div class="contact-group">
+                    <span class="contact-label">GITHUB</span>
+                    <a href="https://github.com/Kotlachandra" target="_blank" class="contact-link">MY PROFILE</a>
+                </div>
+                <div class="contact-group">
+                    <span class="contact-label">LINKEDIN</span>
+                    <a href="https://www.linkedin.com/in/kotla-chandrasekhar" target="_blank" class="contact-link">NETWORK</a>
+                </div>
+                <div class="contact-group">
+                    <span class="contact-label">EMAIL</span>
+                    <a href="mailto:chandukotla85@gmail.com" class="contact-link">CHANDUKOTLA85@GMAIL.COM</a>
+                </div>
+                <div class="contact-group">
+                    <span class="contact-label">RESUME</span>
+                    <a href="General CV Template (approved).doc" class="contact-link" download>DOWNLOAD CV</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> KOTLA CHANDRASEKHAR. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
