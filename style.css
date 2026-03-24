@@ -140,9 +140,44 @@ a {
 .hero {
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none !important;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: none !important;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-out;
+    position: relative;
+    z-index: 20;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    filter: drop-shadow(0 0 30px rgba(166, 255, 0, 0.3));
+    transition: transform 0.4s ease, filter 0.4s ease;
+    border-radius: 20px;
+    border: 2px solid rgba(166, 255, 0, 0.2);
+}
+
+.profile-photo:hover {
+    transform: translateY(-10px) scale(1.02);
+    filter: drop-shadow(0 0 50px rgba(166, 255, 0, 0.6));
 }
 
 .availability {
@@ -262,6 +297,74 @@ section {
     color: #e5e5e5;
 }
 
+/* Education */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education-item {
+    padding: 2rem 2.5rem;
+    border-left: 3px solid var(--accent);
+    background: rgba(166, 255, 0, 0.03);
+    border-radius: 0 12px 12px 0;
+    transition: background 0.3s ease, transform 0.3s ease;
+    pointer-events: auto;
+}
+
+.education-item:hover {
+    background: rgba(166, 255, 0, 0.07);
+    transform: translateX(8px);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.education-institution {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--text-color);
+}
+
+.education-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.education-location {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.education-degree {
+    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-weight: 600;
+    color: var(--text-color);
+    opacity: 0.85;
+    margin-bottom: 0.3rem;
+}
+
+.education-score {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+}
+
 /* Contact */
 .contact-links {
     display: grid;
@@ -370,6 +473,18 @@ section {
         pointer-events: auto;
     }
 
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 6rem;
+    }
+
+    .profile-photo {
+        max-width: 250px;
+    }
+
     /* Let clicks flow perfectly on mobile */
     .work-item {
         flex-direction: column;
@@ -384,5 +499,14 @@ section {
 
     .contact-links {
         gap: 2.5rem;
+    }
+
+    .education-item {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
